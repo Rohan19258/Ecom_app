@@ -1,0 +1,57 @@
+#orderlist-ordertable{
+    border-collapse: collapse;
+    width:max(100%,500px);
+   
+    }
+    
+    #orderlist-ordertable tr td:first-child {
+        display: flex;
+        align-items: center;
+        grid-gap: 12px;
+        padding-left: 6px;
+    }
+    
+    #orderlist-ordertable td{
+        padding: 16px 0;
+    }
+    
+    #orderlist-ordertable th {
+        padding-bottom: 12px;
+        
+        text-align: left;
+        border-bottom: 1px solid rgb(177, 177, 177);
+    
+    }
+  
+    
+    #orderlist-ordertable tr td .status {
+        /* font-size: 10px; */
+        padding: 6px 16px;
+        color: whitesmoke;
+        border-radius: 20px;
+        font-weight: 700;
+    }
+    
+    #orderlist-ordertable tr td .status.completed {
+        background:blue;
+    }
+    #orderlist-ordertable tr td .status.process {
+        background:rgb(181, 173, 216);
+    }
+    #orderlist-ordertable tr td .status.pending {
+        background: orange;
+    }
+
+    .orderlist-deleteicon{
+        width:30px;
+        height:30px;
+        color:rgb(204, 204, 204)
+    }
+
+    .orderlist-deleteicon:hover{
+        color:rgb(190, 56, 56);
+       border:2px solid rgb(180, 176, 176);
+       background-color: aliceblue;
+       border-radius: 5px;
+       cursor: pointer;
+    }

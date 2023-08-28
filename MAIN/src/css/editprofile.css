@@ -1,0 +1,25 @@
+
+
+#editprofile-section{
+    padding:0px ;
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+}
+
+#editprofile-heading{
+margin-bottom:30px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.664);
+        font: 400 1.3vmax "Roboto";
+        font-size: larger;
+        padding: 1.3vmax;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+        width: 50%;
+        /* margin: auto; */
+ 
+}

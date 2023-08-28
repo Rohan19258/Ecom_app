@@ -1,0 +1,196 @@
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+a{
+  color: inherit;
+  /* color:antiquewhite; */
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 3em;
+}
+
+header img{
+  width: 100px;
+}
+
+section.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+section .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  /* height: 400px; */
+  margin: 1.4rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  /* border: 1px solid gray; */
+}
+
+section .card_content{
+  width: 400px;
+}
+
+section .card .card_image {
+  align-self: center;
+  /* width: 300px; */
+  height: 300px;
+}
+
+section .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.card-img{
+  width: 100px;
+  height: 160px;
+  object-fit: contain
+}
+
+/* Product list page button styles */
+
+
+.listButtons button, .buyNow{
+  width: 100px;
+  height: 30px;
+}
+
+.listButtons .view_details{
+  margin-left: 15px;
+}
+
+
+/* Product Detail Page */
+
+.subImage{
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.subImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.productPage{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content_contianer{
+  align-self: center;
+}
+
+.content_contianer p{
+  font-size: large;
+  font-family: sans-serif;
+  line-height: 2;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  section.cards{
+    flex-direction: column;
+  }
+  section .card{
+    width: 90%;
+    margin: 1.4rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  section .card_content {
+    width: 279px;
+  }
+  .productPage{
+    flex-direction: column;
+    text-align: center;
+  }
+  header{
+    padding: 1em 15px;
+  }
+  .subImage{
+    display: none;
+  }
+  .highlightedImage img{
+    width: 90%;
+  }
+}
+
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* .page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+} */
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: rgb(106, 176, 185);
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.row-product-home{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
